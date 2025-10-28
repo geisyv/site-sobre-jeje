@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="terreiros-matriz.css">
+    <title>Terreiros Matrizes</title>
+</head>
+
+<body>
+    <header class="header">
+        <section>
+            <a href="index.html">
+                <img class="logo" src="./img/logo1.png" alt="logo">
+            </a>
+            <nav class="navbar">
+                <a href="index.html">Início</a>
+                <a href="historia.html" target="_blank">História</a>
+                <a href="voduns.html" target="_blank">Voduns</a>
+                <a href="terreiros-matriz.html" target="_blank">Terreiros Matrizes</a>
+            </nav>
+            <div class="icon">
+                <img height="30" width="30" src="./img/icons8-search-50.png" alt="ícone de busca">
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="localizacao">
+            <h2 class="local">Os Terreiros Matrizes</h2>
+
+            <div class="card-terreiro">
+                <div class="texto-terreiro">
+                    <h3>Zògodò Bogum Malê Rundó</h3>
+                    <p>
+                        Localizado no bairro Engenho Velho, em Salvador - BA, fundado em 1858. Seu patrono é o Vodum Sogbo, e é conhecido como Terreiro do Bogum.
+                    </p>
+                </div>
+                <div class="conteudo-terreiro">
+                    <img src="./img/fachada-bogum.jpg" alt="Fachada do terreiro Bogum em Salvador - BA"
+                        class="img-terreiro">
+                    <iframe class="mapa-terreiro"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3938.2008977624077!2d-38.49794302486527!3d-12.99860008731923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71604af61a8d4f7%3A0x40fee922ce894a49!2zQ2FuZG9tYmzDqSBab29nb2TDtCBCb2d1bSBNYWzDqiBIdW5kw7M!5e1!3m2!1spt-BR!2sbr!4v1761598941133!5m2!1spt-BR!2sbr"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="card-terreiro">
+                <div class="texto-terreiro">
+                    <h3>Zògbodò Malè Bogun Sejá Húnde</h3>
+                    <p>
+                        Localizado na cidade de Cachoeira - BA, fundado em 1858. Seu patrono é o Vodum Dan, e é conhecido como Roça do Ventura.
+                    </p>
+                </div>
+                <div class="conteudo-terreiro">
+                    <img src="./img/seja-hunde.jpg" alt="Fachada do terreiro Seja Hundê - Cachoeira - BA" class="img-terreiro">
+                    <iframe class="mapa-terreiro"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3427.316073946039!2d-38.946235289996835!3d-12.59834898763239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x715c700528c12a5%3A0xde4a15e67441b78b!2sRo%C3%A7a%20do%20Ventura%20(Kw%C3%A9%20Seja%20H%C3%B9nde&#39;)!5e1!3m2!1spt-BR!2sbr!4v1761600157070!5m2!1spt-BR!2sbr"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script>
+        let lastScrollTop = 0;
+        const header = document.querySelector(".header");
+
+        window.addEventListener("scroll", function () {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                header.style.top = "-100px";
+            } else {
+                header.style.top = "0";
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        }, false);
+    </script>
+</body>
+
+</html>

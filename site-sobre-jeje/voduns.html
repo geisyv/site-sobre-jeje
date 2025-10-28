@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="voduns.css">
+
+    <title>Voduns</title>
+</head>
+
+<body>
+    <header class="header">
+        <section>
+            <img class="logo" href="index.html" src="./img/logo1.png" alt="logo">
+            <nav class="navbar">
+                <a href="index.html">Início</a>
+                <a href="historia.html" target="_blank">História</a>
+                <a href="voduns.html" target="_blank">Voduns</a>
+                <a href="terreiros-matriz.html" target="_blank">Terreiros Matrizes</a>
+            </nav>
+
+            <div class="icon">
+                <img height="30" width="30" src="./img/icons8-search-50.png">
+            </div>
+        </section>
+    </header>
+
+
+    <main>
+        <section class="panteoes">
+            <div class="panteao">
+                <h2>Panteão da Serpente (Dan)</h2>
+                <img src="" alt="" class="img-panteao">
+                <p>
+                    Neste panteão agrupam-se todos os “Voduns Serpentes”. Estão ligados diretamente ao movimento, à
+                    vida, à renovação e à adivinhação. <br>
+                    <strong>Alguns Voduns Dan:</strong> Gbesén, Dangbala, Áidò Wèdò, Frekwen ou Kwenkwen, Dan Ikó, Dan
+                    Xwevé, Dan Akasú, Dan Jikún ou Ojikún, Azannadô ou Zoonodô (também ligado a Hevioso), Aziri ou Azli.
+                </p>
+            </div>
+
+            <div class="panteao">
+                <h2>Panteão do Trovão (Hevioso)</h2>
+                <img src="" alt="" class="img-panteao">
+                <p>
+                    Nesta família agrupam-se os Voduns Kavionos, ligados ao fogo, à justiça e ao raio, além dos Voduns
+                    do oceano (Tòvodum), que mantêm estreitas ligações com os Kavionos. <br>
+                    <strong>Líder:</strong> Vodum Sogbo. <br>
+                    <strong>Voduns Kavionos:</strong> Sògbò, Gbadé, Akarumbé, Adeen, Kposu, Averekete, Lissá, Agbé Tayó
+                    (vodum do oceano), Djó, Agbé Hunnòn (avejidá), Loko.
+                </p>
+            </div>
+
+            <div class="panteao">
+                <h2>Panteão da Terra (Sakpata)</h2>
+                <img src="" alt="" class="img-panteao">
+                <p>
+                    Agrupa os Voduns da terra, das riquezas e das doenças, ligados à vida e à morte. <br>
+                    <strong>Líder:</strong> Azansú (Sakpata). <br>
+                    <strong>Voduns:</strong> Azansú, Ewá, Parará ou Pararalibu, Avimadje, Agué, Ayizan, Nanã, Agbé
+                    Gèlèdè, Abè Afefè (Avejidá). Kposu também é relacionado, embora pertença a Hevioso.
+                </p>
+            </div>
+
+            <div class="panteao">
+                <h2>Nagô-Vodum</h2>
+                <img src="" alt="" class="img-panteao">
+                <p>
+                    Esses voduns são na verdade orixás, pois são de origem nagô. Os principais são: Gú (Ogum), Odé, Oyá,
+                    Oxun, e Yemanjá. No Bogun, pode-se encontrar o culto a Logun Edé.
+                </p>
+            </div>
+
+            <div class="panteao">
+                <h2>Guardiões</h2>
+                <img src="" alt="" class="img-panteao">
+                <p>
+                    Responsáveis pela defesa e fiscalização da casa, como Sòhòkwe, Legba e mesmo Ogun. Legbá por suas
+                    diversas funções está ligado aos diversos panteões.
+                </p>
+            </div>
+
+</body>
+
+
+
+
+
+<script>
+    let lastScrollTop = 0;
+    const header = document.querySelector(".header");
+
+    window.addEventListener("scroll", function () {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            // Rolando para baixo
+            header.style.top = "-100px"; // Esconde o header
+        } else {
+            // Rolando para cima
+            header.style.top = "0"; // Mostra o header
+        }
+
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Evita valores negativos
+    }, false);
+</script>
+
+</html>
