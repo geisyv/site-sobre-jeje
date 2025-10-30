@@ -1,4 +1,6 @@
 🌍 Site informativo sobre a nação Jeje-Mahi
+
+
 Este projeto tem como objetivo reunir e divulgar informações sobre a história da nação Jeje-Mahi no Brasil, valorizando sua cultura, ancestralidade e contribuição para a formação da identidade afro-brasileira.
 
 A proposta é oferecer uma plataforma acessível e visualmente agradável, onde visitantes possam aprender mais sobre os fundamentos, tradições e trajetórias do povo Jeje-Mahi.
